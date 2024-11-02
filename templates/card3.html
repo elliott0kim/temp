@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Yang Yeon Woong Blog</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{{ url_for('static', filename='css/styles.css') }}" rel="stylesheet" />
+        <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="header">
+            <div class="header-new">
+                <a href="{{ url_for('home') }}">연웅's Manchester United Fan Page</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            </div>
+        </nav>
+        <div class="body mento-info">
+            <!--S: mento-profile-->
+            <div class="mento-profile">
+                <img src="/static/images/manutd3.jpg" alt="">
+            </div>
+            <!--E: mento-profile-->
+            <!--S: mento-info-summary-->
+            <div class="content-area mento-info-summary">
+                <div class="container-fluid">
+                    <p class="visual-txt">맨유 vs 리버풀(9월 2일) 3vs0 패배...</p>
+                    <p class="list-specialty">출처: 후스코어드 닷컴<br>MOM: 모하메드 살라<br>루이스 디아스: 2득점<br>모하메드 살라: 1득점 2도움<br>도미닉 소보슬러이: 1도움</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer-->
+        <!-- Footer-->
+        <footer class="py-5 bg-dark">
+            <div class="container px-4 px-lg-5"></div>
+                <ul style="list-style-type: none; padding-left: 5; display: flex; justify-content: flex-start;">
+                    <!-- 여기에 맨유 공홈 링크던 원하는 곳으로 링크와 함께 이름 수정하세요  -->
+                    <li style="margin-right: 25px; margin-left: 10px; ">
+                        <a href="https://www.manutd.com/ko">맨유 공식 홈페이지(한국)</a>
+                    </li>
+                    <li style="margin-right: 25px;">
+                        <a href="https://www.manutd.com/">맨유 공식 홈페이지(글로벌)</a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/manchesterunited/">맨유 공식 인스타그램</a>
+                    </li>
+                </ul>
+        </footer>
+        
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+    </body>
+</html>
